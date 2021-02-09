@@ -1,5 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const eqArrays = require('../eqArrays');
+const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(actual, expected) {
   let output = "";

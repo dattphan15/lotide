@@ -1,9 +1,11 @@
 const tail = (arr) => {
-  let tails = [];
-  for (let i = 1; i < arr.length; i++) {
-    tails.push(arr[i]);
+  let output = arr[0];
+  let lastIndex = arr.length-1;
+  
+  if (arr.length > 0) {
+    output = arr[lastIndex];
   }
-  return tails;
+  return output;
 };
 
 // EXPORT

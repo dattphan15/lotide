@@ -29,9 +29,9 @@ const assertArraysEqual = function(actual, expected) {
 const takeUntil = function(array, callback) {
   const newArray = [];
 
-  for (const element of array) { // for each element in the array
-    if (!callback(element)) { // if it DOESNT match the callback function element
-      newArray.push(element); // push element to new array
+  for (const element of array) { // for each element in the array starting from the beginning
+    if (!callback(element)) { // return each element in a new array until the callback function is truthy
+      newArray.push(element);
     } else {
       return newArray;
     }
